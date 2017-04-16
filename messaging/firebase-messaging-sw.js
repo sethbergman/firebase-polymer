@@ -7,9 +7,19 @@ importScripts('https://www.gstatic.com/firebasejs/3.5.2/firebase-messaging.js');
 
 // Initialize the Firebase app in the service worker by passing in the
 // messagingSenderId.
-firebase.initializeApp({
-  'messagingSenderId': 'YOUR-SENDER-ID'
-});
+<script src="https://www.gstatic.com/firebasejs/3.7.8/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAO5NP9I-YhdxY1paZg71ZYuxMCWDq1PEc",
+    authDomain: "fir-polymer-pwa.firebaseapp.com",
+    databaseURL: "https://fir-polymer-pwa.firebaseio.com",
+    projectId: "fir-polymer-pwa",
+    storageBucket: "fir-polymer-pwa.appspot.com",
+    messagingSenderId: "1044353952244"
+  };
+  firebase.initializeApp(config);
+</script>
 
 // Retrieve an instance of Firebase Messaging so that it can handle background
 // messages.
